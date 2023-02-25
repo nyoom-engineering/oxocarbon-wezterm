@@ -1,6 +1,6 @@
 <div align="center">
 
-# oxocarbon-<app-name>
+# oxocarbon-wezterm
 
 </div>
 
@@ -17,24 +17,35 @@ Oxocarbon is a set of community ports of IBM's carbon color palette and design p
 
 ## Showcase
 
-<screenshots>
+![neofetch](assets/neofetch.png)
+![colorbars](assets/colorbars.png)
 
 ## Install
 
-- Installation
+1. Run the following commands:
 
-## Features (optional)
+```bash
+mkdir -p $HOME/.config/wezterm/colors
+curl -O https://raw.githubusercontent.com/nyoom-engineering/oxocarbon-wezterm/main/oxocarbon-dark.toml
+```
 
-- Special features and UI tweaks
+2. Set it up as your colorscheme in your `wezterm.lua`
 
-### Plugin Support (optional)
+```lua
+return {
+  color_scheme = 'Oxocarbon Dark',
+  use_fancy_tab_bar = false,
+}
+```
 
-- What plugins does it support
+3. (optional) for a better experience consider enable this settings:
 
-## FAQ (optional)
-
-- Q: **_"Where can I find the doc?"_**\
- A: Run `:help theme`
+```lua
+return {
+  window_decorations = "RESIZE",
+  hide_tab_bar_if_only_one_tab = true,
+}
+```
 
 ## License
 
