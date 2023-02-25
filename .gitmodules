@@ -1,0 +1,3 @@
+[submodule "palette"]
+	path = palette
+	url = https://github.com/nyoom-engineering/base16-oxocarbon.git
