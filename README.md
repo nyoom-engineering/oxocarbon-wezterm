@@ -26,6 +26,7 @@ Oxocarbon is a set of community ports of IBM's carbon color palette and design p
 
 ```bash
 mkdir -p $HOME/.config/wezterm/colors
+cd $HOME/.config/wezterm/colors/
 curl -O https://raw.githubusercontent.com/nyoom-engineering/oxocarbon-wezterm/main/oxocarbon-dark.toml
 ```
 
